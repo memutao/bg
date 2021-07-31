@@ -1,4 +1,4 @@
-module bg
+module github.com/memutao/bg
 
 go 1.16
 

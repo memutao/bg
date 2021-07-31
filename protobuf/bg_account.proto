@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package bg.account;
+option go_package = "bg/account";
+
+service AccountService {
+    rpc GetUserInfo(GetUserInfoReq) returns(GetUserInfoRsp) {}
+}
+
+message GetUserInfoReq {
+    uint32 uid = 1;
+}
+
+message GetUserInfoRsp {
+    uint32 uid = 1;
+    string uname = 2;
+}
